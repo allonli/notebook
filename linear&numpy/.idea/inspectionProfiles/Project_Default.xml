@@ -1,7 +1,6 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <option name="myLocal" value="true" />
     <inspection_tool class="AbstractBeanReferencesInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="AccessStaticViaInstance" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Annotator" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -107,8 +106,29 @@
     <inspection_tool class="HardwiredNamespacePrefix" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="HtmlExtraClosingTag" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="HtmlUnknownAnchorTarget" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="HtmlUnknownAttribute" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="HtmlUnknownTag" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myValues">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myValues">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
     <inspection_tool class="HtmlUnknownTarget" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IfCanBeSwitch" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="minimumBranches" value="3" />
@@ -120,7 +140,11 @@
       <option name="callCheckString" value="java.io.File,.*,java.io.InputStream,read|skip|available|markSupported,java.io.Writer,read|skip|ready|markSupported,java.lang.Boolean,.*,java.lang.Byte,.*,java.lang.Character,.*,java.lang.Double,.*,java.lang.Float,.*,java.lang.Integer,.*,java.lang.Long,.*,java.lang.Math,.*,java.lang.Object,equals|hashCode|toString,java.lang.Short,.*,java.lang.StrictMath,.*,java.lang.String,.*,java.math.BigInteger,.*,java.math.BigDecimal,.*,java.net.InetAddress,.*,java.net.URI,.*,java.util.UUID,.*,java.util.regex.Matcher,pattern|toMatchResult|start|end|group|groupCount|matches|find|lookingAt|quoteReplacement|replaceAll|replaceFirst|regionStart|regionEnd|hasTransparantBounds|hasAnchoringBounds|hitEnd|requireEnd,java.util.regex.Pattern,.*" />
     </inspection_tool>
     <inspection_tool class="ImplicitArrayToString" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="ImplicitTypeConversion" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ImplicitTypeConversion" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="BITS" value="1720" />
+      <option name="FLAG_EXPLICIT_CONVERSION" value="true" />
+      <option name="IGNORE_NODESET_TO_BOOLEAN_VIA_STRING" value="true" />
+    </inspection_tool>
     <inspection_tool class="IncompatibleMask" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InconsistentResourceBundle" enabled="false" level="ERROR" enabled_by_default="false">
       <option name="REPORT_MISSING_TRANSLATIONS" value="true" />
@@ -265,9 +289,16 @@
     <inspection_tool class="RedundantToBinding" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantToProviderBinding" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantTypeArguments" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="RedundantTypeConversion" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RedundantTypeConversion" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="CHECK_ANY" value="false" />
+    </inspection_tool>
     <inspection_tool class="ReflectionForUnavailableAnnotation" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="RequiredAttributes" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RefusedBequest" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreEmptySuperMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="RequiredAttributes" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myAdditionalRequiredHtmlAttributes" value="" />
+    </inspection_tool>
     <inspection_tool class="RequiredBeanTypeInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ReturnFromFinallyBlock" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SafeVarargsDetector" enabled="false" level="WARNING" enabled_by_default="false" />
